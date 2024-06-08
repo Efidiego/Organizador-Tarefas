@@ -15,8 +15,8 @@
 body{
     margin: 0;
     padding: 0;
-    background: var(--primary-color);
-    font-family: 'open sans', sans-serif;
+    background: #2f4f4f	;
+    font-family: "Roboto Condensed", sans-serif;
     font-size: 1.3em;
     line-height: 1.5em;
 }
@@ -24,7 +24,7 @@ body{
 .container{
     max-width: 640px;
     margin: 50px auto;
-    background: rgb(208, 240, 228);
+    background: gray;
     padding: 20px;
     border-radius: 15px;
     
@@ -38,6 +38,7 @@ form input, form label, form button {
 }
 
 form input {
+    background-color: gray;
     font-size: 24px;
     height: 50px;
     padding: 0 20px;
@@ -65,4 +66,28 @@ form button:hover {
 }
 form button:active {
     background: var(--primary-color-darker);
+}
+.btn-tarefa {
+    background-color: grey; /* Cor de fundo do botão */
+    color: white; /* Cor do texto */
+    border: none; /* Remover borda */
+    padding: 10px 20px; /* Espaçamento interno */
+    text-align: center; /* Alinhamento do texto */
+    text-decoration: none; /* Remover sublinhado do texto */
+    display: inline-block; /* Display inline-block */
+    font-size: 16px; /* Tamanho da fonte */
+    margin: 4px 2px; /* Margem */
+    cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+    border-radius: 4px; /* Bordas arredondadas */
+}
+
+.btn-tarefa img {
+    height: 20px; /* Altura da imagem */
+    vertical-align: middle; /* Alinhamento vertical da imagem */
+    margin-right: 5px; /* Espaço entre a imagem e o texto */
+}
+
+/* Adicionando efeito hover */
+.btn-tarefa:hover {
+    background-color: darkgrey; /* Cor de fundo ao passar o mouse */
 }

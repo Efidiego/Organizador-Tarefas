@@ -3,6 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Lista de Tarefas</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
@@ -11,8 +14,12 @@
      <h1>Lista de Tarefas</h1>
       <p>
         <input type="text" class="input-tarefa">
-        <button class="btn-tarefa">Adicionar Tarefa</button>
-      </p>
+        <button id="botao" class="btn-tarefa">
+          <img src="./assets/img/check-fat.svg" alt="Adicionar Tarefa" style="height: 20px; vertical-align: middle;">
+          
+        </button>     
+     </p>
+      
 
       <ul class="tarefas"></ul>
     </section>
