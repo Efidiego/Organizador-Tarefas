@@ -1,6 +1,6 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2; /* Cinza claro para o fundo */
+    font-family: "Roboto Condensed", sans-serif;    
+    background-color: grey; /* Cinza claro para o fundo */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,7 +9,7 @@ body {
 }
 
 .container {
-    background: #ffffff; /* Branco para o contêiner */
+    background: lightgrey; /* Cinza claro para o contêiner */
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -17,6 +17,7 @@ body {
 }
 
 h1 {
+    font-family: "Roboto Condensed", sans-serif;   
     text-align: center;
     color: #333333; /* Cinza escuro para o título */
 }
@@ -25,6 +26,8 @@ form {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
+    align-items:center;
+
 }
 
 .input-tarefa {
@@ -51,21 +54,22 @@ form {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    align-items:left;
 }
 
 .card-tarefa {
-    background: #ffffff; /* Branco para o fundo do card */
+    background: darkgrey; /* Branco para o fundo do card */
     padding: 15px;
-    border: 1px solid #cccccc; /* Cinza para a borda */
+    border: 1px solid #ffffff; /* Cinza para a borda */
     border-radius: 8px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    
 }
 
 .apagar {
-    background: #f44336; /* Vermelho para o botão de apagar */
+    background: red; /* Vermelho para o botão de apagar */
     color: white;
     border: none;
     padding: 5px 10px;
@@ -74,5 +78,6 @@ form {
 }
 
 .apagar:hover {
-    background: #c82333; /* Tom mais escuro de vermelho ao passar o mouse */
+    background: ; /* Tom mais escuro de vermelho ao passar o mouse */
 }
+
