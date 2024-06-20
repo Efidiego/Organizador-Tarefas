@@ -1,6 +1,6 @@
 body {
-    font-family: "Roboto Condensed", sans-serif;    
-    background-color: grey; /* Cinza claro para o fundo */
+    font-family: "Roboto Condensed", sans-serif;
+    background-color: grey; /* Cor de fundo */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,36 +9,30 @@ body {
 }
 
 .container {
-    background: lightgrey; /* Cinza claro para o contêiner */
+    background: lightgrey; /* Cor de fundo do contêiner */
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 400px;
+    width: 500px;
 }
 
 h1 {
-    font-family: "Roboto Condensed", sans-serif;   
+    font-family: "Roboto Condensed", sans-serif;
     text-align: center;
-    color: #333333; /* Cinza escuro para o título */
-}
-
-form {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-    align-items:center;
-
+    color: #333333; /* Cor do título */
 }
 
 .input-tarefa {
-    flex: 1;
     padding: 10px;
-    border: 1px solid #cccccc; /* Cinza para a borda */
+    border: 1px solid #cccccc; /* Cor da borda */
     border-radius: 4px;
+    width: calc(80% - 10px); /* Largura do campo de entrada */
+    box-sizing: border-box; /* Inclui padding e border na largura total do elemento */
+    margin: 10px 0;
 }
 
 .btn-tarefa {
-    background: #4caf50; /* Verde para o botão */
+    background: #4caf50; /* Cor do botão */
     color: white;
     border: none;
     padding: 10px 15px;
@@ -47,29 +41,31 @@ form {
 }
 
 .btn-tarefa:hover {
-    background: #45a049; /* Tom mais escuro de verde ao passar o mouse */
+    background: #45a049; /* Tom mais escuro ao passar o mouse */
 }
 
 .tarefas {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    align-items:left;
+    align-items: flex-start;
+    width: 90%;
 }
 
 .card-tarefa {
-    background: darkgrey; /* Branco para o fundo do card */
+    background: darkgrey; /* Cor de fundo do card */
     padding: 15px;
-    border: 1px solid #ffffff; /* Cinza para a borda */
+    border: 1px solid #ffffff; /* Cor da borda */
     border-radius: 8px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: space-between;
-    
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .apagar {
-    background: red; /* Vermelho para o botão de apagar */
+    background: red; /* Cor do botão de apagar */
     color: white;
     border: none;
     padding: 5px 10px;
@@ -78,6 +74,7 @@ form {
 }
 
 .apagar:hover {
-    background: ; /* Tom mais escuro de vermelho ao passar o mouse */
+    background: darkred; /* Tom mais escuro ao passar o mouse */
 }
+
 
